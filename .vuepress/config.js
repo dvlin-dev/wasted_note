@@ -1,92 +1,114 @@
 module.exports = {
-  "title": "张同学",
-  "description": "無限進步",
-  "dest": "public",
-  "head": [
+  title: '张同学',
+  description: '無限進步',
+  dest: 'public',
+  head: [
     [
-      "link",
+      'link',
       {
-        "rel": "icon",
-        "href": "/silanhua.svg"
-      }
+        rel: 'icon',
+        href: '/silanhua.svg',
+      },
     ],
     [
-      "meta",
+      'meta',
       {
-        "name": "viewport",
-        "content": "width=device-width,initial-scale=1,user-scalable=no"
-      }
-    ]
+        name: 'viewport',
+        content: 'width=device-width,initial-scale=1,user-scalable=no',
+      },
+    ],
+    [
+      'meta',
+      {
+        name: 'viewport',
+        content: 'width=device-width,initial-scale=1,user-scalable=no',
+      },
+    ],
   ],
-  "plugins": [
-    "@vuepress-reco/vuepress-plugin-comments",
+  plugins: [
+    ['@vuepress-reco/vuepress-plugin-comments'],
+    // 更新刷新插件
+    [
+      '@vuepress/pwa',
+      {
+        serviceWorker: true,
+        updatePopup: {
+          message: '发现新内容可用',
+          buttonText: '刷新',
+        },
+      },
+    ],
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          return new Date(timestamp).toUTCString()
+        },
+      },
+    ],
   ],
-  "theme": "reco",
-  "themeConfig": {
-    "valineConfig": {
-      "appId": "NMhYswzSkI8tCbmyDKE5yuiI-gzGzoHsz",
-      "appKey": "kr8ijgy6fcKCQ4YG6b4n9S6y",
+  theme: 'reco',
+  themeConfig: {
+    valineConfig: {
+      appId: 'NMhYswzSkI8tCbmyDKE5yuiI-gzGzoHsz',
+      appKey: 'kr8ijgy6fcKCQ4YG6b4n9S6y',
     },
-    "nav": [
+    nav: [
       {
-        "text": "Home",
-        "link": "/",
-        "icon": "reco-home"
+        text: 'Home',
+        link: '/',
+        icon: 'reco-home',
       },
       {
-        "text": "TimeLine",
-        "link": "/timeline/",
-        "icon": "reco-date"
+        text: 'TimeLine',
+        link: '/timeline/',
+        icon: 'reco-date',
       },
       {
-        "text": "Contact",
-        "icon": "reco-message",
-        "items": [
+        text: 'Contact',
+        icon: 'reco-message',
+        items: [
           {
-            "text": "GitHub",
-            "link": "https://github.com/zbl666",
-            "icon": "reco-github"
-          }
-        ]
-      }
-    ],
-    "sidebar": {
-      "/docs/theme-reco/": [
-        "",
-        "theme",
-        "plugin",
-        "api"
-      ]
-    },
-    "type": "blog",
-    "blogConfig": {
-      "category": {
-        "location": 2,
-        "text": "Category"
+            text: 'GitHub',
+            link: 'https://github.com/zbl666',
+            icon: 'reco-github',
+          },
+        ],
       },
-      "tag": {
-        "location": 3,
-        "text": "Tag"
-      }
+    ],
+    sidebar: {
+      '/docs/theme-reco/': ['', 'theme', 'plugin', 'api'],
     },
-    "friendLink": [
+    type: 'blog',
+    blogConfig: {
+      category: {
+        location: 2,
+        text: 'Category',
+      },
+      tag: {
+        location: 3,
+        text: 'Tag',
+      },
+      socialLinks: [{ icon: 'reco-github', link: 'https://github.com/zbl666' }],
+    },
+    friendLink: [
       {
-        "title": "alan",
-        "desc": "Enjoy when you can, and endure when you must.",
-        "email": "1561314334@qq.com",
-        "link": "https://www.zhangbaolin001.cn/"
+        title: 'alan',
+        desc: 'Enjoy when you can, and endure when you must.',
+        email: '1561314334@qq.com',
+        link: 'https://www.zhangbaolin001.cn/',
       },
     ],
-    "logo": "/silanhua.svg",
-    "search": true,
-    "searchMaxSuggestions": 10,
-    "lastUpdated": "Last Updated",
-    "author": "alan",
-    "authorAvatar": "/avatar.png",
-    "record": "xxxx",
-    "startYear": "2017",
+    logo: '/silanhua.svg',
+    search: true,
+    searchMaxSuggestions: 10,
+    lastUpdated: 'Last Updated',
+    author: 'alan',
+    authorAvatar: '/avatar.png',
+    record: 'xxxx',
+    startYear: '2017',
   },
-  "markdown": {
-    "lineNumbers": true
-  }
+  markdown: {
+    lineNumbers: true,
+  },
 }
