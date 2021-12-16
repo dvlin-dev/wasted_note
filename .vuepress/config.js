@@ -46,6 +46,12 @@ module.exports = {
         },
       },
     ],
+    ["vuepress-plugin-nuggets-style-copy", {
+      copyText: "copy",
+      tip: {
+          content: "复制成功!"
+      }
+    }],
   ],
   theme: 'reco',
   themeConfig: {
