@@ -11,7 +11,7 @@ categories:
 :::
 # 博客搭建
 首先我们需要把博客初始化
-**安装**
+## **安装**
 ```
 npx @vuepress-reco/theme-cli init
 
@@ -29,7 +29,8 @@ theme-cli init
 网络不好的同学使用cli可能会存在一些问题，可以去demo仓库拉下来一个，选择对应版本就可以了，这里我们选择1.x版本
 https://github.com/vuepress-reco/vuepress-theme-reco-demo/tree/demo/1.x
 > 制作教程的时候网络不是很好，感谢作者的热心解答
-
+## github
+如果没有github账号，可以自行注册一个。
 **连接github仓库**
 首先我们创建一个github仓库，然后连接他。
 
@@ -46,3 +47,8 @@ git push -u origin main
 点击New Project按钮导入刚刚创建的github仓库
 
 导入之后全部选择默认配置，博客会自己构建，以后每次本地push之后，vercel会自动构建
+
+::: tip 
+如果有什么疑问，可以在评论区提出。
+关注人数较多的话，会考虑出更加详细的教程
+:::
