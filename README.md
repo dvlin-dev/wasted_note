@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: 张同学
-tagline: 無綫進步
+tagline: 無线進步
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',

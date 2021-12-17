@@ -82,9 +82,6 @@ module.exports = {
         ],
       },
     ],
-    sidebar: {
-      '/docs/theme-reco/': ['', 'theme', 'plugin', 'api'],
-    },
     type: 'blog',
     blogConfig: {
       category: {
@@ -108,11 +105,11 @@ module.exports = {
     logo: '/silanhua.svg',
     search: true,
     searchMaxSuggestions: 10,
-    lastUpdated: 'Last Updated',
+    lastUpdated: '上次更新',
     author: 'alan',
     authorAvatar: '/avatar.png',
     record: 'xxxx',
-    startYear: '2017',
+    startYear: '2021',
   },
   markdown: {
     lineNumbers: true,
