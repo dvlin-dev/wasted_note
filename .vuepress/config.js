@@ -92,7 +92,8 @@ module.exports = {
         location: 3,
         text: 'Tag',
       },
-      socialLinks: [{ icon: 'reco-github', link: 'https://github.com/zbl666' }],
+      socialLinks: [{ icon: 'reco-github', link: 'https://github.com/zbl666' },
+      { icon: 'reco-bilibili', link: 'https://space.bilibili.com/519295997' }],
     },
     friendLink: [
       {
