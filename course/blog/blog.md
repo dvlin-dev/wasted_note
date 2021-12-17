@@ -35,7 +35,7 @@ https://github.com/vuepress-reco/vuepress-theme-reco-demo/tree/demo/1.x
 首先我们创建一个github仓库，然后连接他。
 
 ```git
-git remote add origin https://github.com/zbl666/my-blog.git
+git remote add origin 你的github仓库地址
 git branch -M main
 git push -u origin main
 ```
@@ -51,4 +51,6 @@ git push -u origin main
 ::: tip 
 如果有什么疑问，可以在评论区提出。
 关注人数较多的话，会考虑出更加详细的教程
+[b站视频链接](https://www.bilibili.com/video/BV17Q4y1Y7LF?spm_id_from=333.999.0.0)
+
 :::
