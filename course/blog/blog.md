@@ -31,7 +31,9 @@ https://github.com/vuepress-reco/vuepress-theme-reco-demo/tree/demo/1.x
 > 制作教程的时候网络不是很好，感谢作者的热心解答
 ## github
 如果没有github账号，可以自行注册一个。
+
 **连接github仓库**
+
 首先我们创建一个github仓库(过程略)。
 
 然后在本地初始化git
