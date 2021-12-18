@@ -32,7 +32,15 @@ https://github.com/vuepress-reco/vuepress-theme-reco-demo/tree/demo/1.x
 ## github
 如果没有github账号，可以自行注册一个。
 **连接github仓库**
-首先我们创建一个github仓库，然后连接他。
+首先我们创建一个github仓库(过程略)。
+
+然后在本地初始化git
+```
+git init
+git add .
+git commit -m 'init'
+```
+然后连接远程仓库。
 
 ```git
 git remote add origin 你的github仓库地址
@@ -47,6 +55,9 @@ git push -u origin main
 点击New Project按钮导入刚刚创建的github仓库
 
 导入之后全部选择默认配置，博客会自己构建，以后每次本地push之后，vercel会自动构建
+
+## 更换域名
+如果你不想用他的域名的话，可以进入你创建的项目，进入settings>>domains添加自己的域名
 
 ::: tip 
 如果有什么疑问，可以在评论区提出。
