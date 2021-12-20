@@ -7,9 +7,13 @@ categories:
  - 教程
 sticky: 1
 ---
-::: tip 介绍
+
+::: tip 
 服务器和域名利用vercel的免费资源，博客框架采用vuepress,主题采用 `vuepress-theme-reco@1.6.1`
 :::
+
+<!-- more -->
+
 # 博客搭建
 首先我们需要把博客初始化
 ## **安装**
