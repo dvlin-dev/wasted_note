@@ -1,10 +1,11 @@
 ---
-title: 白嫖永久服务器+域名搭建个人博客
+title: 利用免费资源搭建个人博客
 date: 2021-12-17
 tags:
  - 教程
 categories: 
  - 教程
+sticky: 1
 ---
 ::: tip 介绍
 服务器和域名利用vercel的免费资源，博客框架采用vuepress,主题采用 `vuepress-theme-reco@1.6.1`
