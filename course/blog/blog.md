@@ -1,5 +1,5 @@
 ---
-title: 利用免费资源搭建个人博客
+title: Vuepress+vercel搭建个人博客
 date: 2021-12-17
 tags:
  - 教程
