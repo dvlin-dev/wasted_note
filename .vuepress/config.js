@@ -108,7 +108,7 @@ module.exports = {
     search: true,
     searchMaxSuggestions: 10,
     lastUpdated: '上次更新',
-    author: 'alan',
+    author: 'Alan',
     authorAvatar: '/avatar.png',
     record: 'xxxx',
     startYear: '2021',
