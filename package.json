@@ -1,7 +1,8 @@
 {
   "name": "note",
   "version": "1.0.0",
-  "author": "reco_luan",
+  "license": "MIT",
+  "author": "alan",
   "scripts": {
     "dev": "vuepress dev . --open --host \"localhost\"",
     "build": "vuepress build ."
