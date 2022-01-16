@@ -2,9 +2,9 @@
 title: 手写js解释器（一）
 date: 2022-1-12
 tags:
-  - babel
+  - Babel
 categories:
-  - 前端与编译原理
+  - Babel
 ---
 
 ::: tip
@@ -46,7 +46,8 @@ function add(a, b) {
 }
 ```
 
-对应的 AST 是这样的（明天画图）,AST 将与本文无关的部分进行了删除精简，具体的 AST 可在该网站进行查看[astexplorer](https://astexplorer.net/)
+对应的 AST 是这样的,AST 将与本文无关的部分进行了删除精简，具体的 AST 可在该网站进行查看[astexplorer](https://astexplorer.net/)
+<img :src="$withBase('/babel/functionAST.png')"></img>
 
 ```json
 {
@@ -228,12 +229,12 @@ globalScope.set('console', {
 })
 evaluator.evaluate(ast.program, globalScope)
 ```
-我们定义了一个作用域 Scope ，有 declarations 属性，代表这个 scope 中声明的变量，并且还有 parentScope 属性指向父 scope，通过 set 方法在作用域中声明变量，通过 getLocal 查找本作用域的变量，通过 get 方法支持按照作用域链不断向上查找变量。
+作用域 **Scope** ，有 `declarations` 属性，代表这个 scope 中声明的变量，并且还有 `parentScope` 属性指向父 **scope**，通过 `set` 方法在作用域中声明变量，通过 `getLocal` 查找本作用域的变量，通过 `get` 方法支持按照作用域链不断向上查找变量。
 - - -
-我们定义了一个 evaluator，这个就是 AST 解释器。从根节点来执行，最外层是 File 节点，取 program 属性，Program 有 body 属性，是 AST 的数组，遍历执行。如果有不支持的节点类型，通过 code frame 来打印 AST 对应的代码，并且提示不支持。
+AST 解释器 **evaluator**，从根节点来执行，最外层是 `File` 节点，取 `program` 属性，`Program` 有 `body` 属性，是 AST 的数组，遍历执行。如果有不支持的节点类型，通过 **code frame** 来打印 AST 对应的代码，并且提示不支持。
 
 创建一个全局作用域传入每个 evaluate 方法，用于作用域中变量的声明和取值。
-在 astInterpreters 添加了 VariableDeclarator 等节点的支持
+在 **astInterpreters** 添加了 **VariableDeclarator 等**节点的支持
 
 ## 完整代码
 
