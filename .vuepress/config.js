@@ -111,6 +111,7 @@ module.exports = {
     author: 'Alan',
     authorAvatar: '/avatar.png',
     record: '豫ICP备2020029001号-2',
+    recordLink: 'https://beian.miit.gov.cn/',
     startYear: '2021',
   },
   markdown: {
