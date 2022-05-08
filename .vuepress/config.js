@@ -110,7 +110,7 @@ module.exports = {
     lastUpdated: '上次更新',
     author: 'Alan',
     authorAvatar: '/avatar.png',
-    record: '豫ICP备2020029001号-3',
+    record: '豫ICP备2020029001号-2',
     startYear: '2021',
   },
   markdown: {
