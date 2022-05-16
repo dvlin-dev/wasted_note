@@ -1,5 +1,5 @@
 module.exports = {
-  title: '张同学',
+  title: '个人生活日记',
   description: '無限進步',
   dest: 'public',
   head: [
