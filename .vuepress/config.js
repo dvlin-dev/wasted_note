@@ -1,5 +1,5 @@
 module.exports = {
-  title: '个人生活日记',
+  title: '我的笔记分享',
   description: '無限進步',
   dest: 'public',
   head: [
@@ -110,7 +110,7 @@ module.exports = {
     lastUpdated: '上次更新',
     author: 'Alan',
     authorAvatar: '/avatar.png',
-    record: '豫ICP备2020029001号-2',
+    record: '豫ICP备2020029001号-6',
     recordLink: 'https://beian.miit.gov.cn/',
     startYear: '2021',
   },
