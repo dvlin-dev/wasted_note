@@ -4,12 +4,12 @@
   "license": "MIT",
   "author": "alan",
   "scripts": {
-    "dev": "vuepress dev . --open --host \"localhost\"",
-    "build": "vuepress build ."
+    "dev": "export NODE_OPTIONS=--openssl-legacy-provider && vuepress dev . --open --host \"localhost\"",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && vuepress build ."
   },
   "devDependencies": {
     "vuepress": "1.8.2",
-    "vuepress-theme-reco": "1.6.10"
+    "vuepress-theme-reco": "^1.6.17"
   },
   "description": "note",
   "dependencies": {
